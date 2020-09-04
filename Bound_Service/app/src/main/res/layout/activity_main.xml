@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/yashwinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="109dp"
+        android:text="Hey"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/yashwinButton"
+        app:layout_constraintStart_toStartOf="@+id/yashwinButton" />
+
+    <Button
+        android:id="@+id/yashwinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showTime"
+        android:text="What's the Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
