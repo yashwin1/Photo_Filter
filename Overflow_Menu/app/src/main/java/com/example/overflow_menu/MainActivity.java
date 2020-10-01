@@ -44,27 +44,27 @@ public class MainActivity extends AppCompatActivity {
         
         if(item.getItemId() == R.id.menu_red){
             if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                main_view.setBackgroundColor(Color.RED);
-                return true;
+                item.setChecked(false);
+            else
+                item.setChecked(true);
+            main_view.setBackgroundColor(Color.RED);
+            return true;
         }
         else if(item.getItemId() ==  R.id.menu_green){
             if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                main_view.setBackgroundColor(Color.GREEN);
-                return true;
+                item.setChecked(false);
+            else
+                item.setChecked(true);
+            main_view.setBackgroundColor(Color.GREEN);
+            return true;
         }
         else if(item.getItemId() ==  R.id.menu_yellow){
             if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                main_view.setBackgroundColor(Color.YELLOW);
-                return true;
+                item.setChecked(false);
+            else
+                item.setChecked(true);
+            main_view.setBackgroundColor(Color.YELLOW);
+            return true;
         }
         else
             return super.onOptionsItemSelected(item);
