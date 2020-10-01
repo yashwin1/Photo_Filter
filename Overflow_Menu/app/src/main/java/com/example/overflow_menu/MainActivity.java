@@ -41,35 +41,62 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         RelativeLayout main_view = (RelativeLayout) findViewById(R.id.main_view);
-
-        switch(item.getItemId()){
-            case R.id.menu_red:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                main_view.setBackgroundColor(Color.RED);
-                return true;
-
-            case R.id.menu_green:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                main_view.setBackgroundColor(Color.GREEN);
-                return true;
-
-            case R.id.menu_yellow:
-                if(item.isChecked())
-                    item.setChecked(false);
-                else
-                    item.setChecked(true);
-                main_view.setBackgroundColor(Color.YELLOW);
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
+        
+        if(item.getItemId() == R.id.menu_red){
+            if(item.isChecked())
+                item.setChecked(false);
+            else
+                item.setChecked(true);
+            main_view.setBackgroundColor(Color.RED);
+            return true;
         }
+        else if(item.getItemId() ==  R.id.menu_green){
+            if(item.isChecked())
+                item.setChecked(false);
+            else
+                item.setChecked(true);
+            main_view.setBackgroundColor(Color.GREEN);
+            return true;
+        }
+        else if(item.getItemId() ==  R.id.menu_yellow){
+            if(item.isChecked())
+                item.setChecked(false);
+            else
+                item.setChecked(true);
+            main_view.setBackgroundColor(Color.YELLOW);
+            return true;
+        }
+        else
+            return super.onOptionsItemSelected(item);
+
+//         switch(item.getItemId()){
+//             case R.id.menu_red:
+//                 if(item.isChecked())
+//                     item.setChecked(false);
+//                 else
+//                     item.setChecked(true);
+//                 main_view.setBackgroundColor(Color.RED);
+//                 return true;
+
+//             case R.id.menu_green:
+//                 if(item.isChecked())
+//                     item.setChecked(false);
+//                 else
+//                     item.setChecked(true);
+//                 main_view.setBackgroundColor(Color.GREEN);
+//                 return true;
+
+//             case R.id.menu_yellow:
+//                 if(item.isChecked())
+//                     item.setChecked(false);
+//                 else
+//                     item.setChecked(true);
+//                 main_view.setBackgroundColor(Color.YELLOW);
+//                 return true;
+
+//             default:
+//                 return super.onOptionsItemSelected(item);
+//         }
 
     }
 }
